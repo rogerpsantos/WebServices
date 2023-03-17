@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package consumindo_nfe_sp;
 
 import br.inf.portalfiscal.nfe.wsdl.nfestatusservico2.NfeCabecMsg;
@@ -37,9 +32,9 @@ public class Consumindo_Nfe_Sp {
              * 3) arquivoCacertsGeradoParaCadaEstado = Arquivo com os Certificados necessarios para 
              * acessar o WebService. Pode ser gerado com a Classe NFeBuildAllCacerts. 
              */  
-            String caminhoDoCertificadoDoCliente = "C:/JavaC/certificado/Roger.pfx";  
+            String caminhoDoCertificadoDoCliente = "../TESTE.pfx";  
             String senhaDoCertificadoDoCliente = "12345678";
-            String arquivoCacertsGeradoParaCadaEstado = "C:/JavaC/nfe-cacerts/NFeCacerts";
+            String arquivoCacertsGeradoParaCadaEstado = "../NFeCacerts";
             
             System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true");  
             /** 
