@@ -39,9 +39,9 @@ public class NFeConsultaStatusServicoAll {
             String senhaDoCertificadoDoCliente = "nfemmc2017";
             String arquivoCacertsGeradoParaCadaEstado = "C:/JavaC/nfe-cacerts/NFeCacerts";
             
-//            String caminhoDoCertificadoDoCliente = "C:/JavaC/certificado/Bonilha-cert.pfx";  
+//            String caminhoDoCertificadoDoCliente = "../TESTE.pfx";  
 //            String senhaDoCertificadoDoCliente = "12345678";
-//            String arquivoCacertsGeradoParaCadaEstado = "C:/JavaC/nfe-cacerts/NFeCacerts";
+//            String arquivoCacertsGeradoParaCadaEstado = "../TESTE/NFeCacerts";
             
             System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true");  
             /** 
