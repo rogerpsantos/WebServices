@@ -34,9 +34,9 @@ public class NFeWS {
      */
     public static void main(String[] args) {
         try {
-            String caminhoDoCertificadoDoCliente = "C:\\JavaC\\certificado\\Backup Certificado Digital NFe 2017 - MM Cofap.pfx";
+            String caminhoDoCertificadoDoCliente = "..\\TESTE.pfx";
             String senhaDoCertificadoDoCliente = "nfemmc2017";
-            String arquivoCacertsGeradoTodosOsEstados = "C:\\JavaC\\nfe-cacerts\\NFeCacerts";
+            String arquivoCacertsGeradoTodosOsEstados = "..\\TESTE\\NFeCacerts";
             
             dados = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
                          + "<consStatServ versao=\"3.10\" xmlns=\"http://www.portalfiscal.inf.br/nfe\">"
