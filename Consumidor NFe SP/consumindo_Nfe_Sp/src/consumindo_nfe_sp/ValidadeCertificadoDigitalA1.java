@@ -23,26 +23,13 @@ public class ValidadeCertificadoDigitalA1 {
 	public static void main(String[] args) {
 		
 		try {
-//			String caminhoDoCertificadoDoCliente = "C:/JavaC/certificado/certificadoDoCliente.pfx";
-//            String senhaDoCertificadoDoCliente = "1234";
-            //String caminhoDoCertificadoDoCliente = "C:\\JavaC\\certificado\\Certificado_Digital_NFe 2016_MM_Cofap.pfx";
-            //String senhaDoCertificadoDoCliente = "nfemmcofap";
+        
             
-//            String caminhoDoCertificadoDoCliente = "C:/JavaC/certificado/Backup Certificado Digital NFe 2017 - MM Cofap.pfx";  
-//            String senhaDoCertificadoDoCliente = "nfemmc2017";
-//            String arquivoCacertsGeradoParaCadaEstado = "C:/JavaC/nfe-cacerts/NFeCacerts";
-//            
+                    String caminhoDoCertificadoDoCliente = "../TESTE.pfx";  
+            	    String senhaDoCertificadoDoCliente = "12345678";
+                    String arquivoCacertsGeradoParaCadaEstado = "../TESTE/NFeCacerts";
             
-            
-            String caminhoDoCertificadoDoCliente = "C://JavaC//certificado//WB.pfx";  
-            String senhaDoCertificadoDoCliente = "1234";
-            String arquivoCacertsGeradoParaCadaEstado = "C:/JavaC/nfe-cacerts/NFeCacerts";
-            
-            
-//            String caminhoDoCertificadoDoCliente = "C:\\JavaC\\certificado\\Bonilha-cert.pfx";
-//            String senhaDoCertificadoDoCliente = "12345678";
-//            String arquivoCacertsGeradoTodosOsEstados = "C:/JavaC/nfe-cacerts/NFeCacerts";
-//            
+        
 		    KeyStore keystore = KeyStore.getInstance(("PKCS12"));
                     keystore.load(new FileInputStream(caminhoDoCertificadoDoCliente), senhaDoCertificadoDoCliente.toCharArray());  
                     //KeyStore ks = KeyStore.getInstance("Windows-MY", "SunMSCAPI");
