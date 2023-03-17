@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>WS REST JSON | Consumindo</title>
+        <style>
+            body{background-color: black;}
+            h1{color: red; font-family: sans-serif; font-size: 50px; text-align: center;}
+            p{color: brown; font-family: sans-serif; font-size: 14px;}
+        </style>
+    </h:head>
+    <h:body>
+        <h1><h:outputText value="Filmes em Cartaz - REST com JSON"/></h1>
+        <h:dataTable value ="#{cinemaMB.filmesEmCartaz}" var="f">
+            <h:column>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{f.trailer}" escape="false"/>
+                    <h:panelGrid columns="2">
+                        <p>Título:</p> <h:outputText value="#{f.titulo}" escape="false"/> 
+                        <p>Sinopse:</p> <h:outputText value="#{f.sinopse}" escape="false"/> 
+                        <p>Gênero:</p> <h:outputText value="#{f.genero}" escape="false"/>
+                        <p>Duração:</p> <h:outputText value="#{f.duracao}" escape="false"></h:outputText>
+                    </h:panelGrid>
+                </h:panelGrid>
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</html>
+
