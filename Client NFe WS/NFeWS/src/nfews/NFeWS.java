@@ -35,7 +35,7 @@ public class NFeWS {
     public static void main(String[] args) {
         try {
             String caminhoDoCertificadoDoCliente = "..\\TESTE.pfx";
-            String senhaDoCertificadoDoCliente = "nfemmc2017";
+            String senhaDoCertificadoDoCliente = "12345678";
             String arquivoCacertsGeradoTodosOsEstados = "..\\TESTE\\NFeCacerts";
             
             dados = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
